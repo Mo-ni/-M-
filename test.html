@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="test" style="width: 350px;padding: 10px;background-color: red;box-sizing: border-box">border-box：正常</div>
+<div id="test" style="width: 350px;padding: 10px;background-color: green;box-sizing: content-box">content-box：怪异</div>
+<script>
+    let item=document.getElementById("test");
+    console.log("123:",item.clientWidth);
+</script>
+</body>
+</html>
